@@ -2,36 +2,26 @@ package org.example;
 
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 public class OperationsTest {
     @Test
     void plusNumbers() {
-        var operations = new Operations();
-        var result = operations.plus(2, 2);
-
-        assert result == 4;
+        assertEquals(Operations.plus(2, 2), 4);
     }
 
     @Test
     void minusNumbers() {
-        var operations = new Operations();
-        var result = operations.minus(2, 2);
-
-        assert result == 0;
+        assertEquals(Operations.minus(2, 2), 0);
     }
 
     @Test
     void divNumbers() {
-        var operations = new Operations();
-        var result = operations.div(2, 2);
-
-        assert result == 1;
+        assertEquals(Operations.div(2, 2), 1);
     }
 
     @Test
     void mulNumbers() {
-        var operations = new Operations();
-        var result = operations.mul(2, 2);
-
-        assert result == 4;
+        assertEquals(Operations.mul(2, 2), 4);
     }
 }
